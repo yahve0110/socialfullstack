@@ -1,0 +1,9 @@
+services:
+  - name: frontend
+    buildCommand: docker-compose build frontend
+    startCommand: docker-compose up frontend
+    env: production
+  - name: backend
+    buildCommand: docker-compose build backend
+    startCommand: docker-compose up backend
+    env: production
