@@ -1,0 +1,33 @@
+
+
+.groupsContainer{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+
+    gap: 20px;
+    overflow: hidden;
+    height: 100%;
+    padding: 15px;
+}
+
+.groupsWrapper{
+    grid-column-start: 1;
+    grid-column-end: 7;
+width: 100%;
+    border-radius: 10px;
+    overflow: auto;
+
+    background-color: var(--secondary-section-color);
+    padding: 2rem;
+
+}
+
+.groupsWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar{
+    grid-column-start: 7;
+    grid-column-end: -1;
+}

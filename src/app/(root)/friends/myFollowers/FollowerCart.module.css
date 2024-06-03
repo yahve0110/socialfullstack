@@ -1,0 +1,56 @@
+
+.cartDiv{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   border-bottom: var(--main-border);
+   margin-top: 5px;
+   padding: 10px;
+}
+
+.imageDiv{
+    display: flex;
+
+}
+
+.imageDiv img{
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+
+
+.buttonContainer{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.buttonContainer button{
+    border: none ;
+    letter-spacing: 0.7px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: transparent;
+    color: var(--bright-blue-color);
+
+    cursor: pointer;
+
+}
+.buttonContainer button:hover{
+    color: #22c5db;
+}
+
+.buttonContainer img{
+
+margin-bottom: 3px;
+margin-left: 4px;
+}
+
+.sendMsg{
+    color: red;
+}

@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+
+}
+
+
+
+[data-theme="dark"]:root{
+  --primary-background: #06141D;
+  --main-section-color: #253642;
+  --main-text-color: #d8d8d8;
+  --secondary-section-color: #1B2730;
+  --main-border: 1px solid #153b458e;
+  --main-details-color: #369dad;
+  --bright-blue-color: #24cfea;
+  --secondary-background: #253642c6;
+  --mymsg-color: #1c1b1b;
+
+}
+
+:root{
+  --main-section-color: #d5e1e9;
+  --main-text-color: #3d3d3d;
+  --primary-background: #85bff4;
+  --secondary-section-color: #f2fbfd;
+  --main-border: 1px solid #c0c0c0d3;
+  --main-details-color: #a6e2ec;
+  --bright-blue-color: #32c6dc;
+  --mymsg-color: #E1FFC6;
+
+  --secondary-background: #ffffffb7;
+}
+
+
+body{
+  max-height: 100vh;
+  background-color: var(--primary-background);
+  transition: background-color 0.4s, color 0.4s;
+
+}
+
+.sectionComponent {
+  /* background-color: var(--secondary-section-color); */
+
+  grid-column-start: 11;
+  grid-column-end: 28;
+
+  grid-row-start: 7;
+  grid-row-end: -1;
+
+
+  height: 100%;
+}
+

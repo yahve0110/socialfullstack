@@ -1,0 +1,253 @@
+.messagePageContainer{
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+    gap: 30px;
+
+
+ }
+
+ .messagePageContainerUp{
+    height: 7%;
+border-bottom: var(--main-border);
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+align-items: center;
+
+
+ }
+
+
+
+
+
+
+ .arrowImg{
+    transform: rotate(90deg);
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+ }
+
+ .goBackDiv{
+cursor: pointer;
+ }
+
+ .messagePageContainerBottom{
+    min-height: 10%;
+    border: var(--main-border);
+    background-color: var(--main-section-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+ }
+
+ .messagePageContainerBottom textarea{
+    min-width: 500px;
+    resize: none;
+    border-radius: 5px;
+    border: var(--main-border);
+    background-color: var(--secondary-section-color);
+    padding: 8px;
+    height: auto;
+    max-height: 150px;
+
+    overflow: auto;
+ }
+
+ .messagePageContainerBottom textarea:focus{
+    outline: 0;
+ }
+
+ .messagePageContainerBottom textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.sendMsgIcon{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.messagePageContainerMiddle{
+   height: 83%;
+    padding: 2rem;
+    padding-left: 3rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+
+ }
+
+ .messagePageContainerMiddle::-webkit-scrollbar {
+   width: 4px; /* ширина скроллбара */
+ }
+
+ .messagePageContainerMiddle::-webkit-scrollbar-track {
+
+   opacity: 100%;
+ }
+
+ .messagePageContainerMiddle::-webkit-scrollbar-thumb {
+   background: #93939359;
+   opacity: 95%;
+   height: 40px;
+   border-radius: 30px;
+ }
+
+ /* <--------------MESSAGE--------------------> */
+
+.message{
+    margin-bottom: 20px;
+    background-color: var(--main-section-color);
+    padding: 7px;
+    max-width: 70%;
+    border-radius: 10px 10px 10px 0;
+    position: relative;
+    text-wrap: wrap;
+word-wrap: break-word;
+
+
+}
+
+.message::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 100%;
+   display: block;
+   width: 30px;
+   height: 30px;
+   background: radial-gradient(60px at top left, transparent 49%, var(--main-section-color) 51%) no-repeat right bottom;
+
+
+}
+
+.msgReverse{
+   margin-bottom: 20px;
+   background-color: var(--mymsg-color);
+   padding: 7px;
+   max-width: 70%;
+   border-radius: 10px 10px 0px 10px;
+   position: relative;
+   align-self: flex-end;
+   overflow-wrap: break-word;
+
+
+}
+.msgReverse::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 100%;
+   display: block;
+   width: 30px;
+   height: 30px;
+   background: radial-gradient(60px at top right, transparent 49%,  var(--mymsg-color) 51%) no-repeat right bottom;
+
+
+}
+ .messageLeftPart{
+display: flex;
+
+ }
+ .messageName p{
+    font-size: 13px;
+ }
+
+ .messageLeftPart img{
+    margin-right: 3px;
+    border-radius: 50%;
+ }
+
+ .messageText{
+    display: flex;
+    align-items: flex-end;
+margin-left: 30px;
+margin-bottom: 5px;
+overflow-wrap: break-word;
+overflow-wrap: anywhere;
+
+
+ }
+
+ .messagePageWrapper{
+   height: 100%;
+
+
+   grid-column-start: 1;
+   grid-column-end: 7;
+   background-color: var(--secondary-section-color);
+   border-radius: 10px;
+   border: var(--main-border);
+
+
+   overflow: hidden;
+
+   display: flex;
+   flex-direction: column;
+ }
+
+ .goBackDiv a{
+   text-decoration: none;
+   color: var(--main-text-color);
+ }
+
+ .msgAvatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+ }
+
+
+ .msgTime{
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+   font-size: 13px;
+ }
+
+ .profile_picture{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   object-fit: cover;
+ }
+
+ .emojiBtn{
+   width: 40px;
+   height: 40px;
+   margin-right: 20px;
+   cursor: pointer;
+   border: transparent;
+   background: transparent;
+ }
+
+.emojiPicker{
+   position: relative;
+}
+
+ .emojiDiv{
+   background-color: var(--mymsg-color);
+   border-radius: 10px;
+   position: absolute;
+   top: -100px;
+   left: -20px;
+   max-width: 200px;
+   padding: 3px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+ }
+
+ .emojiContainer{
+
+   cursor: pointer;
+ }

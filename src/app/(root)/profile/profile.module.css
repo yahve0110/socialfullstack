@@ -1,0 +1,147 @@
+
+
+
+.profile {
+    color: var(--main-text-color);
+    min-height: 20rem;
+    box-shadow: none;
+
+    border-radius: 15px;
+    padding: 2px;
+    margin: 0;
+    max-height:calc(100vh - 250px);
+
+
+
+}
+
+.profileContentContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(20,50px);
+
+
+    height: 92%;
+    overflow: hidden ;
+    padding-top: 5px;
+}
+
+.postsContainer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 5px;
+    border-radius: 10px;
+    border-radius: 4px;
+    overflow: auto;
+
+    grid-row-start: 1;
+    grid-row-end: -1;
+    height: 100vh;
+
+}
+
+.postsContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+.emptyDiv{
+    width: 100%;
+    height: 38%;
+}
+
+/* <------------Followers Block ---------------> */
+
+.followersBLock{
+
+height: 250px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+background-color: var(--secondary-section-color);
+border-radius: 10px;
+padding:2px;
+margin-bottom: 1rem;
+padding:12px;
+
+}
+.followersBLock h2{
+    margin-bottom: 10px;
+}
+
+.myFollowersDiv{
+    display: flex;
+    overflow: auto;
+}
+
+.myFollowersDiv a{
+    margin-right: 10px;
+    color: var(--main-text-color);
+}
+
+.followersBLock img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.noFollowers{
+   font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFollowers{
+    height: 50%;
+
+}
+
+
+
+/* <------------Groups Block ---------------> */
+.groupsBlock{
+
+    height: 350px;
+
+    background-color: var(--secondary-section-color);
+    border-radius: 10px;
+    padding:12px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; }
+
+    .additionalContainer{
+        grid-column-start: 5;
+        grid-column-end: -1;
+    }
+
+
+    .privateDiv{
+        font-size: 30px;
+        width: 100%;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    .groupItem{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+    }
+
+    .groupItem{
+        color: var(--main-text-color);
+    }
+    .groupItem img{
+        margin-right: 10px;
+    }
+
+    .groupItem:hover{
+        background-color: var(--main-section-color);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+   .followersBLock h4{
+        margin-bottom: 5px;
+    }

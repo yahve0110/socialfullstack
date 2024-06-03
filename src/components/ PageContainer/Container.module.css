@@ -1,0 +1,18 @@
+.mainContainer{
+    height: 100%;
+
+    grid-column-start: 1;
+    grid-column-end: 7;
+    /* background-color: var(--secondary-section-color); */
+    border-radius: 10px;
+ 
+
+
+
+    overflow: auto;
+
+}
+
+.mainContainer::-webkit-scrollbar { width: 0;}
+
+

@@ -1,0 +1,50 @@
+.membersBlock{
+    grid-column-start: 7;
+    grid-column-end: -1;
+
+    height: 240px;
+    padding: 20px;
+    padding-top: 5px;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    background-color: var(--secondary-section-color);
+
+
+
+}
+
+.membersBlock a{
+
+    color: var(--main-text-color);
+
+
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 13px;
+}
+
+.userBlock{
+    margin-right: 8px;
+}
+
+.membersDiv{
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.membersHeading{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    }
