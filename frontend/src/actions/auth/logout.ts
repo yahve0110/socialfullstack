@@ -1,5 +1,7 @@
-import { URL } from "@/globals";
+"use server"
 
+import { URL } from "@/globals";
+import { cookies } from "next/headers";
 
 export async function logoutHandler() {
   try {
@@ -14,7 +16,14 @@ export async function logoutHandler() {
     console.log(response.status);
 
     if (response.ok) {
-    return true
+      cookies().set({
+        name: "sessionID",
+        value: "",
+        expires: new Date(0),
+        path: "/",
+      });
+
+      return true;
     } else {
       return false;
     }
