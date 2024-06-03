@@ -1,0 +1,272 @@
+.groupAbout{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 200px;
+    background-color:var(--secondary-section-color);
+    border-radius: 10px;
+
+    position: relative;
+}
+
+
+
+
+
+.coverImg{
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 80%;
+z-index:1;
+border-radius: 10px;
+
+}
+
+.about{
+    margin-bottom: 8px;
+}
+
+.groupInfo{
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--main-section-color);
+    border-radius: 30px 30px 0 0;
+    padding: 10px;
+
+    width: 100%;
+
+
+}
+
+.groupSettings{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.groupSettings button{
+    background: none;
+    border: transparent;
+    color: var(  --bright-blue-color);
+    cursor: pointer;
+}
+
+.settingIcon{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.modalSettings{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: var(--main-section-color);
+    opacity: 95%;
+    z-index: 333;
+    padding: 30px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
+
+}
+
+.closeModal{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.requests{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.requestsDiv{
+    background-color: var(--secondary-section-color);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 300px;
+    overflow: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.noEnteRequests{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.requestDiv{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.requestInfo{
+    display: flex;
+}
+
+.requestInfo img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+
+
+.requestAccept button{
+    width: 70px;
+    height: 20px;
+    background-color:rgb(188, 230, 90);
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.requestAccept button img{
+
+    margin-left: 5px;
+}
+.requestAccept button:hover{
+    background-color:rgb(200, 246, 93);
+}
+
+.deleteGroup{
+    border: transparent;
+    background-color: crimson;
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    transition: all 200.9ms ease-in-out;
+}
+
+.deleteGroup:hover{
+    background-color: rgb(255, 149, 0);
+
+}
+
+.invite{
+    position: absolute;
+    right: 40px;
+    bottom: 5px;
+    color: var(--bright-blue-color);
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.invite img{
+    margin-left: 5px;
+}
+
+.invite:hover{
+    color: rgb(28, 172, 229);
+
+}
+
+.inviteToGroupModal{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: var(--main-section-color);
+    opacity: 95%;
+    z-index: 333;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: auto;
+
+}
+
+.inviteUserDiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.inviteUserDiv:hover{
+    background-color: var(--secondary-section-color);
+
+}
+
+.userDivInfo{
+    display: flex;
+}
+
+.userDivInfo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.inviteDivBtn{
+     display: flex;
+     align-items: center;
+     padding: 6px;
+     transition: all 0.1s ease-in-out;
+     cursor: pointer;
+     border-radius: 10px;
+
+}
+.inviteDivBtn img{
+    margin-left: 5px;
+}
+
+.inviteDivBtn:hover{
+    background-color: rgba(69, 201, 69, 0.744);
+}
+
+.leave{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 180px;
+    bottom: 5px;
+    color: red;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.leave:hover{
+    color: rgb(255, 61, 61);
+
+}
+
+.leave img{
+    margin-left: 3px;
+}

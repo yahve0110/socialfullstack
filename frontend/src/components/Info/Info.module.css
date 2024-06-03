@@ -1,0 +1,12 @@
+
+.infoDiv{
+    grid-column-start: 7;
+    grid-column-end: -1;
+
+    height: 400px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: var(--secondary-section-color);
+}

@@ -1,0 +1,25 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(37, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    height: calc(100vh - 90px);
+    max-width: 1670px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content{
+    grid-column-start:10;
+    grid-column-end: 31;
+
+    grid-row-start: 1;
+    grid-row-end: -1;
+
+    border-radius: 10px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    /* background-color:var(--secondary-section-color); */
+
+
+
+}

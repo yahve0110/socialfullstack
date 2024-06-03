@@ -1,0 +1,42 @@
+
+
+.groupContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.8ms ease-in-out;
+
+
+}
+
+.groupInfo{
+    display: flex;
+    align-items: center;
+
+}
+
+.groupInfo img{
+    margin-right: 15px;
+}
+
+.groupContainer:hover{
+    background-color: var(--main-section-color);
+}
+
+.noRequests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.8ms ease-in-out;
+    background-color: var(--secondary-section-color);
+}

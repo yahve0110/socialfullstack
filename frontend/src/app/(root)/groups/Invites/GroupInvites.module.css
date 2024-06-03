@@ -1,0 +1,49 @@
+.noInvites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.8ms ease-in-out;
+    background-color: var(--secondary-section-color);
+}
+
+
+.inviteDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inviteInfo{
+    display: flex;
+}
+
+.inviteInfo img{
+    margin-right: 10px;
+}
+
+.acceptInvite{
+    border: transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background: rgb(133, 211, 99);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.acceptInvite img{
+    margin-left: 5px;
+}
+
+.acceptInvite:hover{
+
+
+    background: rgb(166, 248, 131);
+}

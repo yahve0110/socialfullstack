@@ -1,0 +1,46 @@
+
+
+.followerDiv{
+    background-color: var(--main-section-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: flex-end;
+}
+
+.followerDiv div{
+    display: flex;
+    font-size: 20px;
+}
+
+.followerDiv div img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.followerDiv div p{
+    margin-left: 10px;
+}
+
+.followerDiv button{
+    width: 110px;
+    height: 30px;
+    background-color: var(--secondary-section-color);
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.followerDiv button img{
+
+    margin-left: 5px;
+}
+.followerDiv button:hover{
+    background-color: var(--main-details-color);
+
+}

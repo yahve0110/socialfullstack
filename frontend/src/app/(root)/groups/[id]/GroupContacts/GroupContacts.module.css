@@ -1,0 +1,28 @@
+.contactsWrapper{
+    grid-column-start: 7;
+    grid-column-end: -1;
+
+    height: 100px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: var(--secondary-section-color);
+}
+
+.contactsWrapper a{
+    color: var(--main-text-color);
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.info{
+    display: flex;
+    margin-top: 10px;
+}

@@ -1,0 +1,23 @@
+.settingsContainer{
+    padding: 4rem;
+    font-size: 20px;
+}
+
+
+.btnPrivacy{
+    margin: 20px;
+    font-size: 18px;
+    width: 150px;
+    border: transparent;
+    background: var(--bright-blue-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btnPrivacy:hover{
+
+    background: var(--main-details-color);
+
+}

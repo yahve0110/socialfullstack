@@ -1,0 +1,120 @@
+.crateEventContainer{
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-color: var(--secondary-section-color);
+
+    border-radius: 10px;
+
+    padding: 10px 30px;
+
+
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftPart{
+    display: flex;
+    flex-direction: column;
+}
+.leftPart input{
+margin-bottom: 3px;
+border: transparent ;
+border: var(--main-border);
+background-color: transparent;
+height: 30px;
+border-radius: 10px;
+padding: 5px;
+}
+
+.rightPart textarea{
+    resize: none;
+    border-radius: 10px;
+    border: transparent;
+    padding: 7px;
+    background: transparent;
+    border: var(--main-border);
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+
+.rightPart textarea:focus, .leftPart input:focus{
+    outline: none;
+}
+
+.rightPart{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.bottomPart{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottomPart button{
+    border: transparent;
+    min-width: 80px;
+    padding: 5px;
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+
+    background-color: var(--main-details-color);
+    cursor: pointer;
+}
+
+.bottomPart button:hover{
+    background-color: var(--bright-blue-color);
+}
+
+.activateImage{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.ImgPreviewDiv{
+    position: relative;
+    margin-top: 20px;
+  width: 100%;
+  height: 250px;
+
+}
+
+.previewImg{
+    object-fit: contain;
+}
+
+.emptyTextError{
+    margin-top: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(229, 26, 26);
+
+ }
+
+ .clearImgBtn{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 200;
+    cursor: pointer;
+ }
